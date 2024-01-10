@@ -1,0 +1,11 @@
+nav {
+  background: var(--clr-black);
+  height: 80px;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  margin: auto;
+  outline: 1px solid red;
+}

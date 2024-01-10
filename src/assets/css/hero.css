@@ -1,5 +1,7 @@
 .hero-content {}
 
 .hero-title {
-  color: red;
+  color: var(--clr-white);
+  font-weight: 700;
+  letter-spacing: 2px;
 }

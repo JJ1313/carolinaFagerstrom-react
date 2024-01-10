@@ -1,5 +1,6 @@
-export function Navbar() {
+import "../assets/css/navbar.css"
 
+export function Navbar() {
   return (
     <>
       <nav>
