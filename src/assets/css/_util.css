@@ -1,13 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
 :root {
   --font-primary: "Poppins", helvetica;
   --font-secondary: "Montserrat", sans-serif;
+  --font-hand: "Fleur De Leah", cursive;
+
 
   --clr-white: #fff;
   --clr-gray: #999;
   --clr-black: #333;
-
+  --clr-black-0: #000;
   --clr-inactive: #a1a1a1;
   --clr-alert: #d1922e;
+
+  --t-link: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--clr-white);
+  color: var(--clr-black);
+  font-family: var(--font-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
