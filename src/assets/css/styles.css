@@ -1,15 +1,17 @@
 @import './_util.css';
 
+/* ------ Headers ------  */
 .h1 {
   font-size: 2rem;
-  color: var(--clr-white);
+  letter-spacing: .5rem;
 }
 
+/* ------ Fonts families ------  */
 .ff-hand {
   font-family: var(--font-hand);
 }
 
-
+/* ------ Display ------  */
 .d-flex {
   display: flex;
 }
@@ -18,16 +20,53 @@
   display: grid;
 }
 
+/* ------ Align items ------  */
+.align-items-center {
+  align-items: center;
+}
 
+/* ------ Justify content ------  */
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+/* ------ Margin ------ */
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+/* ------ Padding ------ */
+.px-4 {
+  padding-inline: 4rem;
+}
+
+/* ------ Gap ------ */
 .g-1 {
-  gap: 10px;
+  gap: 1rem;
+}
+
+.g-15 {
+  gap: 1.5rem;
 }
 
 .g-2 {
-  gap: 20px;
+  gap: 2rem;
 }
 
+.g-3 {
+  gap: 2.5rem;
+}
 
+/* ------ Text colors ------ */
+.txt-white {
+  color: var(--clr-white);
+}
+
+/* ------ Text align ------ */
 .txt-center {
   text-align: center;
 }
@@ -40,17 +79,38 @@
   text-align: start;
 }
 
-.bg-black {
+/* ------ Text ------  */
+.txt-upper {
+  text-transform: uppercase;
+}
+
+/* ------ Background colors ------ */
+.bg-black-1 {
+  background: var(--clr-black-1);
+}
+
+.bg-black-0 {
   background: var(--clr-black-0);
 }
 
+/* ------ Otros ------  */
 .link {
-  text-transform: uppercase;
   transition: var(--t-link) all ease;
   cursor: pointer;
-  color: var(--clr-white);
 }
 
 .link:hover {
   color: var(--clr-alert);
+}
+
+.dropdown {
+
+  &::after {
+    margin-left: 5px;
+    content: '▼';
+  }
+}
+
+.dropdown-menu {
+  /* display: none; */
 }
