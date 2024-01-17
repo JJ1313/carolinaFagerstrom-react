@@ -44,6 +44,10 @@
   padding-inline: 4rem;
 }
 
+.p-1 {
+  padding: 1rem;
+}
+
 /* ------ Gap ------ */
 .g-1 {
   gap: 1rem;
@@ -64,6 +68,10 @@
 /* ------ Text colors ------ */
 .txt-white {
   color: var(--clr-white);
+}
+
+.txt-black {
+  color: var(--clr-black-3);
 }
 
 /* ------ Text align ------ */
@@ -93,6 +101,10 @@
   background: var(--clr-black-0);
 }
 
+.bg-white {
+  background: var(--clr-white);
+}
+
 /* ------ Otros ------  */
 .link {
   transition: var(--t-link) all ease;
@@ -101,16 +113,4 @@
 
 .link:hover {
   color: var(--clr-alert);
-}
-
-.dropdown {
-
-  &::after {
-    margin-left: 5px;
-    content: '▼';
-  }
-}
-
-.dropdown-menu {
-  /* display: none; */
 }

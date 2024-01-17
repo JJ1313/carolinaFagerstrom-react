@@ -16,12 +16,17 @@
 
   #menu-obras {
     position: absolute;
-    inset: unset;
-    bottom: anchor(top);
-    left: anchor(center);
-    /* top: anchor(bottom); */
-    /* left: anchor(left); */
-    outline: 1px solid red;
     color: white;
   }
+}
+
+.dropdown {
+  &::after {
+    margin-left: 5px;
+    content: '▼';
+  }
+}
+
+.dropdown-menu {
+  /* display: none; */
 }

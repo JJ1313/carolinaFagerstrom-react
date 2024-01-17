@@ -9,13 +9,14 @@ export function Navbar() {
           <li><a className="link txt-white txt-upper" href="/">Inicio</a></li>
           <li><a className="link txt-white txt-upper" href="/">Sobre Mi</a></li>
           <li><a className="link txt-white txt-upper" href="/news">Noticias</a></li>
-          <li id="dropdown-obras" className="link txt-white txt-upper dropdown">Obras</li>
+          <li id="dropdown-obras" className="link txt-white txt-upper dropdown">Obras
+            <ul id="menu-obras" className="dropdown-menu bg-white p-1" anchor="#dropdown-obras">
+              <li className="txt-black link">Conciertos</li>
+              <li className="txt-black link">Multimedia</li>
+            </ul>
+          </li>
           <li><a className="link txt-white txt-upper" href="/news">Contacto</a></li>
           <li className="link txt-white txt-upper">EN</li>
-        </ul>
-        <ul id="menu-obras" className="dropdown-menu" anchor="#dropdown-obras">
-          <li>Conciertos</li>
-          <li>Multimedia</li>
         </ul>
       </nav>
     </>
