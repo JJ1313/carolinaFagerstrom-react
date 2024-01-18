@@ -2,9 +2,15 @@
 
 /* ------ Headers ------  */
 .h1 {
-  font-size: 2rem;
-  letter-spacing: .5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+
+  @media(width >500px) {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+  }
 }
+
 
 /* ------ Fonts families ------  */
 .ff-hand {
@@ -79,8 +85,18 @@
   margin-inline-start: 1.5rem !important;
 }
 
+.ms-05 {
+  margin-inline-start: 0.5rem !important;
+}
+
 .my-auto {
   margin-block: auto;
+}
+
+.ms-md-15 {
+  @media(width > 500px) {
+    margin-inline-start: 1.5rem !important;
+  }
 }
 
 /* ------ Padding ------ */

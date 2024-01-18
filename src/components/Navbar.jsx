@@ -18,7 +18,7 @@ export function Navbar() {
           <li><a className="link txt-white txt-upper fw-600 fs-08 d-block" href="#contact">Contacto</a></li>
         </ul >
         <button className="btn-burger"></button>
-        <button className="link txt-white txt-upper fw-600 fs-08 ms-15 my-auto">EN</button>
+        <button className="link txt-white txt-upper fw-600 fs-08 ms-05 ms-md-15 my-auto">EN</button>
       </nav >
     </>
   )
