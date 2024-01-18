@@ -4,65 +4,117 @@
   top: 0;
   width: 100dvw;
 
-  .dropdown-menu {
-    position: absolute;
+  &>ul {
+    height: 0;
+    overflow: hidden;
   }
 }
 
-.dropdown-icon {
+.btn-burger {
+  min-width: 20px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
 
   &::before,
   &::after {
     content: '';
-    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 3px;
     background: var(--clr-white);
-    width: 9px;
-    height: 2px;
     transition: all 0.3s ease;
   }
 
   &::before {
-    margin-left: 3px;
-    transform: translateY(-4px) rotate(45deg);
+    top: 4px;
   }
 
   &::after {
-    transform: translateY(-4px) translateX(-4px) rotate(-45deg);
+    top: 12px;
+  }
+
+  &:hover {
+
+    &::before,
+    &::after {
+      background: var(--clr-alert);
+      top: 8px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
 }
 
-.dropdown-menu {
-  width: 10rem;
-  overflow: hidden;
-  padding-left: 1rem;
-  height: 0;
-  opacity: 0;
-  transition: all ease 0.3s;
-}
-
-.dropdown:hover {
-  & .dropdown-menu {
-    height: auto;
-    opacity: 1;
-    padding: 1rem;
-  }
-
-  & .dropdown-icon::before,
-  & .dropdown-icon::after {
-    background: var(--clr-alert);
-  }
-
-  & .dropdown-icon::before {
-    transform: translateY(-4px) rotate(-45deg);
-  }
-
-  & .dropdown-icon::after {
-    transform: translateY(-4px) translateX(-4px) rotate(45deg);
-  }
-}
 
 @media (width > 980px) {
   #navbar {
-    outline: 1px solid red;
+    &>ul {
+      height: auto;
+    }
+  }
+
+  .btn-burger {
+    display: none;
+  }
+
+  .dropdown-icon {
+
+    &::before,
+    &::after {
+      content: '';
+      display: inline-block;
+      background: var(--clr-white);
+      width: 9px;
+      height: 2px;
+      transition: all 0.3s ease;
+    }
+
+    &::before {
+      margin-left: 3px;
+      transform: translateY(-4px) rotate(45deg);
+    }
+
+    &::after {
+      transform: translateY(-4px) translateX(-4px) rotate(-45deg);
+    }
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    width: 10rem;
+    overflow: hidden;
+    padding-left: 1rem;
+    height: 0;
+    opacity: 0;
+    transition: all ease 0.3s;
+  }
+
+  .dropdown:hover {
+    & .dropdown-menu {
+      height: auto;
+      opacity: 1;
+      padding: 1rem;
+    }
+
+    & .dropdown-icon::before,
+    & .dropdown-icon::after {
+      background: var(--clr-alert);
+    }
+
+    & .dropdown-icon::before {
+      transform: translateY(-4px) rotate(-45deg);
+    }
+
+    & .dropdown-icon::after {
+      transform: translateY(-4px) translateX(-4px) rotate(45deg);
+    }
   }
 }
