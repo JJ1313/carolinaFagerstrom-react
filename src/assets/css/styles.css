@@ -11,6 +11,10 @@
   font-family: var(--font-hand);
 }
 
+.ff-sec {
+  font-family: var(--font-secondary);
+}
+
 /* ------ Display ------  */
 .d-flex {
   display: flex;
@@ -18,6 +22,10 @@
 
 .d-grid {
   display: grid;
+}
+
+.d-none {
+  display: none;
 }
 
 /* ------ Align items ------  */
@@ -36,16 +44,32 @@
 
 /* ------ Margin ------ */
 .mb-2 {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
+}
+
+.mb-1 {
+  margin-bottom: 1rem !important;
+}
+
+.mt-1 {
+  margin-top: 1rem !important;
+}
+
+.ms-auto {
+  margin-inline-start: auto !important;
+}
+
+.ms-15 {
+  margin-inline-start: 1.5rem !important;
 }
 
 /* ------ Padding ------ */
 .px-4 {
-  padding-inline: 4rem;
+  padding-inline: 4rem !important;
 }
 
 .p-1 {
-  padding: 1rem;
+  padding: 1rem !important;
 }
 
 /* ------ Gap ------ */
@@ -92,6 +116,34 @@
   text-transform: uppercase;
 }
 
+.txt-cap {
+  text-transform: capitalize;
+}
+
+/* ------ Text Weight ------ */
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fs-08 {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.fs-06 {
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+}
+
 /* ------ Background colors ------ */
 .bg-black-1 {
   background: var(--clr-black-1);
@@ -109,6 +161,8 @@
 .link {
   transition: var(--t-link) all ease;
   cursor: pointer;
+  align-self: center;
+  white-space: nowrap;
 }
 
 .link:hover {
