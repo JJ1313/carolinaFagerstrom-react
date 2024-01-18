@@ -17,29 +17,41 @@
 
 /* ------ Display ------  */
 .d-flex {
-  display: flex;
+  display: flex !important;
 }
 
 .d-grid {
-  display: grid;
+  display: grid !important;
 }
 
 .d-none {
-  display: none;
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
 }
 
 /* ------ Align items ------  */
 .align-items-center {
-  align-items: center;
+  align-items: center !important;
+}
+
+.align-items-start {
+  align-items: start !important;
+}
+
+.align-self-center {
+  align-self: center;
 }
 
 /* ------ Justify content ------  */
 .justify-content-between {
-  justify-content: space-between;
+  justify-content: space-between !important;
 }
 
 .justify-content-center {
-  justify-content: center;
+  justify-content: center !important;
 }
 
 /* ------ Margin ------ */
@@ -49,6 +61,10 @@
 
 .mb-1 {
   margin-bottom: 1rem !important;
+}
+
+.mb-auto {
+  margin-bottom: auto !important;
 }
 
 .mt-1 {
@@ -63,30 +79,46 @@
   margin-inline-start: 1.5rem !important;
 }
 
+.my-auto {
+  margin-block: auto;
+}
+
 /* ------ Padding ------ */
 .px-4 {
   padding-inline: 4rem !important;
+}
+
+.px-1 {
+  padding-inline: 1rem !important;
+}
+
+.pb-1 {
+  padding-block-end: 1rem;
 }
 
 .p-1 {
   padding: 1rem !important;
 }
 
+.pt-1 {
+  padding-top: 1rem;
+}
+
 /* ------ Gap ------ */
 .g-1 {
-  gap: 1rem;
+  gap: 1rem !important;
 }
 
 .g-15 {
-  gap: 1.5rem;
+  gap: 1.5rem !important;
 }
 
 .g-2 {
-  gap: 2rem;
+  gap: 2rem !important;
 }
 
 .g-3 {
-  gap: 2.5rem;
+  gap: 2.5rem !important;
 }
 
 /* ------ Text colors ------ */
@@ -100,71 +132,75 @@
 
 /* ------ Text align ------ */
 .txt-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .txt-justify {
-  text-align: justify;
+  text-align: justify !important;
 }
 
 .txt-start {
-  text-align: start;
+  text-align: start !important;
 }
 
 /* ------ Text ------  */
 .txt-upper {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 .txt-cap {
-  text-transform: capitalize;
+  text-transform: capitalize !important;
 }
 
 /* ------ Text Weight ------ */
 
 .fw-500 {
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 .fw-600 {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .fw-700 {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .fs-08 {
-  font-size: 0.8rem;
-  line-height: 0.8rem;
+  font-size: 0.8rem !important;
+  line-height: 0.8rem !important;
 }
 
 .fs-06 {
-  font-size: 0.6rem;
-  line-height: 0.6rem;
+  font-size: 0.6rem !important;
+  line-height: 0.6rem !important;
 }
 
 /* ------ Background colors ------ */
 .bg-black-1 {
-  background: var(--clr-black-1);
+  background: var(--clr-black-1) !important;
 }
 
 .bg-black-0 {
-  background: var(--clr-black-0);
+  background: var(--clr-black-0) !important;
 }
 
 .bg-white {
-  background: var(--clr-white);
+  background: var(--clr-white) !important;
 }
 
 /* ------ Otros ------  */
 .link {
   transition: var(--t-link) all ease;
   cursor: pointer;
-  align-self: center;
   white-space: nowrap;
+  align-self: flex-start;
 }
 
 .link:hover {
   color: var(--clr-alert);
+}
+
+button {
+  background: transparent;
 }
