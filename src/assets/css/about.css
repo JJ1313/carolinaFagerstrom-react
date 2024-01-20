@@ -1,0 +1,32 @@
+#about {
+  --img-w: 264px;
+  --img-h: 400px;
+  --clr-decoration: #b8a07e;
+
+  & .img-wrapper {
+    width: var(--img-w);
+    height: var(--img-h);
+    position: relative;
+
+    &::before {
+      content: '';
+      z-index: -1;
+      width: var(--img-w);
+      height: var(--img-h);
+      position: absolute;
+      border: 20px solid var(--clr-decoration);
+      left: -40px;
+      top: 40px;
+    }
+  }
+
+  & .about-img {
+    width: var(--img-w);
+    height: var(--img-h);
+    object-fit: cover;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+  }
+
+}
