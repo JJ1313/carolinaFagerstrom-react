@@ -1,0 +1,18 @@
+#contact {
+
+  input,
+  textarea {
+    border: 1px solid var(--clr-gray);
+  }
+
+  input {
+    height: 50px;
+  }
+
+  textarea {
+    width: 100%;
+    resize: vertical;
+    letter-spacing: 0.1rem;
+  }
+
+}

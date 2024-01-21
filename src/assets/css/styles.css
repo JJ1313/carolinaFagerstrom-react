@@ -69,6 +69,11 @@
   }
 }
 
+/* ------ Flex properties ------ */
+.flex-column {
+  flex-direction: column;
+}
+
 /* ------ Align items ------  */
 .align-items-center {
   align-items: center !important;
@@ -112,6 +117,10 @@
   margin-top: 1rem !important;
 }
 
+.mt-2 {
+  margin-top: 2rem !important;
+}
+
 .mt-10 {
   margin-top: 10rem !important;
 }
@@ -130,6 +139,10 @@
 
 .my-auto {
   margin-block: auto;
+}
+
+.mx-auto {
+  margin-inline: auto;
 }
 
 .my-15 {
@@ -300,7 +313,7 @@
 
 .btn {
   background: var(--clr-alert);
-  border-radius: 5px;
+  border-radius: 2px;
   color: var(--clr-white);
   text-align: center;
   display: grid;
