@@ -320,6 +320,7 @@
   align-items: center;
   transition: 0.5s all ease-in-out;
   font-weight: 600;
+  cursor: pointer;
 
   &:hover {
     outline: 1px solid var(--clr-alert);
@@ -330,4 +331,5 @@
 
 button {
   background: transparent;
+
 }
