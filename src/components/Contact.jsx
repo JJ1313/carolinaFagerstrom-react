@@ -10,7 +10,7 @@ export function Contact() {
           <li><a href="mailto:lanierpal@gmail.com" className="txt-gray link"><span></span> lanierpal@gmail.com</a></li>
         </ul>
       </div>
-      <form className="">
+      <form method="POST">
         <div className="form-container d-grid cols-2 g-row-1 g-col-1p5">
           <div className="input-container">
             <input type="text" id="name" aria-label="Nombre" placeholder="Nombre" className="txt-upper fs-0p8 fw-500 ff-terciary" />
