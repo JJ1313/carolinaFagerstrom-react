@@ -1,0 +1,42 @@
+#btn-top {
+  --margin: 10px;
+  --translateY-hover: -5px;
+
+  position: fixed;
+  bottom: var(--margin);
+  right: var(--margin);
+  width: 50px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background: var(--clr-black-2);
+  cursor: pointer;
+
+  &:hover::before {
+    transform: translateY(var(--translateY-hover)) rotate(-45deg);
+  }
+
+  &:hover::after {
+    transform: translateY(var(--translateY-hover)) rotate(45deg);
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    width: 20px;
+    height: 3px;
+    background: var(--clr-white);
+    position: absolute;
+    top: 22px;
+    transition: all ease-in-out 0.3s;
+  }
+
+  &::before {
+    left: 9px;
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    right: 9px;
+    transform: rotate(45deg);
+  }
+}
