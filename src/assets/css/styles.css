@@ -180,6 +180,10 @@
 }
 
 /* ------ Gap ------ */
+.g-0p5 {
+  gap: 0.5rem !important;
+}
+
 .g-1 {
   gap: 1rem !important;
 }
@@ -311,10 +315,19 @@
   cursor: pointer;
   white-space: nowrap;
   align-self: flex-start;
+
+  & svg {
+    transition: 0.8s all ease;
+    cursor: pointer;
+  }
 }
 
 .link:hover {
   color: var(--clr-alert);
+
+  & svg {
+    fill: var(--clr-alert) !important;
+  }
 }
 
 /* ------- Btn ------ */

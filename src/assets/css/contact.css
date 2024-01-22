@@ -1,4 +1,6 @@
 #contact {
+
+
   & .form-container {
 
     & .input-container:nth-child(n) {
@@ -16,6 +18,11 @@
     &:focus {
       outline: 1px solid var(--clr-alert);
     }
+  }
+
+  & svg {
+    fill: var(--clr-gray-5);
+
   }
 
   & input {

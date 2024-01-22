@@ -3,6 +3,7 @@ import "../assets/css/footer.css"
 export function Footer() {
   return (
     <>
+
       <footer id="footer" className="d-flex bg-black-0 pt-3p75 txt-white mt-5">
         <h2 className="h1 ff-hand"><a href="/" className="link">Carolina Fagerström</a></h2>
         <div>
@@ -24,6 +25,7 @@ export function Footer() {
           </ul>
         </div>
       </footer>
+
     </>
   )
 }
