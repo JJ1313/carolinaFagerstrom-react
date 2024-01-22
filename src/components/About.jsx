@@ -6,7 +6,7 @@ export function About() {
       <section id="about" className="section d-grid cols cols-lg-2 pt-6p25">
         <div className="d-none d-lg-grid align-items-center justify-content-center">
           <div className="img-wrapper">
-            <img className="about-img" src="src\assets\img\piano.jpg" />
+            <img className="about-img" loading="lazy" src="src\assets\img\piano.jpg" />
           </div>
         </div>
         <div>

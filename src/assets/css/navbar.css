@@ -28,7 +28,7 @@
     width: 20px;
     height: 3px;
     background: var(--clr-white);
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
   }
 
   &::before {
@@ -99,7 +99,7 @@
     padding-left: 1rem;
     height: 0;
     opacity: 0;
-    transition: all ease 0.3s;
+    transition: all ease 0.5s;
   }
 
   .dropdown:hover {

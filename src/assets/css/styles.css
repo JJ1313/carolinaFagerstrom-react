@@ -33,7 +33,7 @@
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .d-block {
@@ -51,7 +51,7 @@
 
 /* ------ Flex properties ------ */
 .flex-column {
-  flex-direction: column;
+  flex-direction: column !important;
 }
 
 /* ------ Align items ------  */
@@ -122,7 +122,7 @@
 
 /* --- block */
 .my-auto {
-  margin-block: auto;
+  margin-block: auto !important;
 }
 
 /* --- inline */
@@ -131,22 +131,22 @@
 }
 
 .mx-auto {
-  margin-inline: auto;
+  margin-inline: auto !important;
 }
 
 /* ------ Padding ------ */
 /* --- top */
 .pt-1 {
-  padding-top: 1rem;
+  padding-top: 1rem !important;
 }
 
 .pt-6p25 {
-  padding-top: 6.25rem;
+  padding-top: 6.25rem !important;
 }
 
 /* --- bottom */
 .pb-1 {
-  padding-block-end: 1rem;
+  padding-block-end: 1rem !important;
 }
 
 /* --- inline */
@@ -190,12 +190,12 @@
 
 /* --- rows */
 .g-row-1 {
-  row-gap: 1rem;
+  row-gap: 1rem !important;
 }
 
 /* --- cols */
 .g-col-1p5 {
-  column-gap: 1.5rem;
+  column-gap: 1.5rem !important;
 }
 
 /* ------ Text colors ------ */
@@ -299,7 +299,7 @@
 
 /* ------ Otros ------  */
 .link {
-  transition: var(--t-link) all ease;
+  transition: 0.8s all ease;
   cursor: pointer;
   white-space: nowrap;
   align-self: flex-start;
@@ -333,7 +333,7 @@
 }
 
 .hover-shadow:hover {
-  box-shadow: 0 3px 5px 0px var(--clr-gray-5);
+  box-shadow: 0 3px 30px 0px var(--clr-gray);
 }
 
 
@@ -356,11 +356,11 @@
 /* ------ Medium ------ */
 @media (width > 600px) {
   .section {
-    padding-inline: 2rem;
+    padding-inline: 2rem !important;
   }
 
   .cols-md-2 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 
   .ms-md-1p5 {
@@ -380,19 +380,19 @@
   }
 
   .section {
-    padding-inline: 3rem;
+    padding-inline: 3rem !important;
   }
 
   .d-lg-grid {
-    display: grid;
+    display: grid !important;
   }
 
   .cols-lg-2 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 
   .cols-lg-3 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
   }
 
   .px-lg-4 {
