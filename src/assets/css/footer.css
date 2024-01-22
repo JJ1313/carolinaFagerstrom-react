@@ -1,0 +1,7 @@
+#footer {
+  & .navbar {
+    & li {
+      border-bottom: 1px solid var(--clr-gray-5);
+    }
+  }
+}
