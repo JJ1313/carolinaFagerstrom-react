@@ -1,5 +1,7 @@
 #contact {
-
+  &>div li {
+    width: min-content;
+  }
 
   & .form-container {
 
