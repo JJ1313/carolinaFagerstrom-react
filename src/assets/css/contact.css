@@ -1,18 +1,45 @@
 #contact {
+  & .form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
 
-  input,
-  textarea {
-    border: 1px solid var(--clr-gray);
+    & .input-container:nth-child(1),
+    & .input-container:nth-child(2) {
+      grid-column-start: span 2;
+    }
+
+    & .input-container:nth-child(3),
+    & .input-container:nth-child(4) {
+      grid-column-start: span 2;
+    }
+
   }
 
-  input {
+
+  & input,
+  & textarea {
+    border: 1px solid var(--clr-gray);
+    width: 100%;
+  }
+
+  & input {
     height: 50px;
   }
 
-  textarea {
-    width: 100%;
+  & textarea {
+
     resize: vertical;
     letter-spacing: 0.1rem;
+  }
+}
+
+@media (width > 600px) {
+
+  & .input-container:nth-child(1),
+  & .input-container:nth-child(2) {
+    grid-column-start: auto;
   }
 
 }

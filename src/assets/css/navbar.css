@@ -58,7 +58,7 @@
 }
 
 
-@media (width > 980px) {
+@media (width > 900px) {
   #navbar {
 
     &>ul {

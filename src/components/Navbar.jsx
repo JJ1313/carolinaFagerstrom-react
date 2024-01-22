@@ -3,8 +3,8 @@ import "../assets/css/navbar.css"
 export function Navbar() {
   return (
     <>
-      <nav id="navbar" className="bg-black-0 px-4">
-        <div className="h1 ff-hand txt-white link d-block my-auto"><a className="" href="/">Carolina </a></div>
+      <nav id="navbar" className="bg-black-0 px-2 px-sm px-lg-4">
+        <div className="h1 ff-hand txt-white link d-block my-auto"><a className="" href="/">Carolina</a></div>
         <ul className="g-15 ms-auto pt-1" data-collapsed="true">
           <li className=""><a className="link txt-white txt-upper fw-600 fs-08 ff-sec d-block" href="/">Inicio</a></li>
           <li><a className="link txt-white txt-upper fw-600 fs-08 d-block" href="/#about">Sobre Mi</a></li>

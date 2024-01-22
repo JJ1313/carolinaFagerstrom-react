@@ -10,7 +10,6 @@
 
   &:hover {
     /* scale: 1.02; */
-    box-shadow: 0 3px 5px 0px var(--clr-gray-5);
     /* outline: 1px solid var(--clr-alert); */
   }
 }
