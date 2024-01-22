@@ -11,7 +11,7 @@ export function NewsHome() {
         <Card title="Titulo 2" img="src\assets\img\piano.jpg" link=""></Card>
         <Card title="Titulo 3" img="src\assets\img\piano.jpg" link=""></Card>
       </div>
-      <a href="/news" className="btn mx-auto mt-2">Ver más</a>
+      <a href="/news" className="btn mx-auto mt-2 txt-upper">Ver más</a>
     </section>
   )
 }
