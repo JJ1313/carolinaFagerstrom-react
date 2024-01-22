@@ -22,8 +22,6 @@
   --clr-black-3: #333;
   --clr-inactive: #a1a1a1;
   --clr-alert: #d1922e;
-
-  --t-link: 0.3s;
 }
 
 * {
@@ -63,4 +61,8 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  background: transparent;
 }
