@@ -1,10 +1,10 @@
 export function Footer() {
   return (
     <>
-      <footer>
+      <footer className="d-flex bg-black-0 pt-3p75 txt-white mt-5">
         <h2>Carolina Fagerström</h2>
         <div>
-          <h3>Contacto</h3>
+          <h3 className="txt-upper">Contacto</h3>
           <ul>
             <li>Home</li>
             <li>News</li>
@@ -12,12 +12,13 @@ export function Footer() {
           </ul>
         </div>
         <div>
+          <h3 className="txt-upper">Contáctame</h3>
           <ul>
-            <li></li>
-            <li></li>
+            <li><a href="tel:">Telefono</a></li>
+            <li><a href="mailto:">correo</a></li>
           </ul>
           <ul>
-            <li></li>
+            <li><a href="http://">YT</a></li>
           </ul>
         </div>
 
