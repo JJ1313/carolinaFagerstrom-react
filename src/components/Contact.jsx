@@ -5,9 +5,9 @@ export function Contact() {
       <div className="d-flex flex-column">
         <h2 className="ff-secondary fs-1p6 fw-600 txt-upper mb-1">Contacto</h2>
         <ul className="mb-2 d-flex flex-column">
-          <li><a href="" className="txt-gray link"><span></span> Con Con, Chile</a></li>
-          <li><a href="" className="txt-gray link"><span></span> +56 9 7436 7083</a></li>
-          <li><a href="" className="txt-gray link"><span></span> lanierpal@gmail.com</a></li>
+          <li><a href="https://maps.app.goo.gl/v9ZXUUGpgzZPDRk7A" target="_blank" className="txt-gray link"><span></span> Con Con, Chile</a></li>
+          <li><a href="tel:+56974367083" className="txt-gray link"><span></span> +56 9 7436 7083</a></li>
+          <li><a href="mailto:lanierpal@gmail.com" className="txt-gray link"><span></span> lanierpal@gmail.com</a></li>
         </ul>
       </div>
       <form className="">
