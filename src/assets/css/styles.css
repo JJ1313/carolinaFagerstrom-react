@@ -365,7 +365,10 @@
   transition: 0.5s all ease-in-out;
   font-weight: 600;
   cursor: pointer;
-  height: 50px;
+  height: 43px;
+  font-size: 0.8rem;
+  margin-inline: auto;
+  text-transform: uppercase;
 
   &:hover {
     outline: 1px solid var(--clr-alert);

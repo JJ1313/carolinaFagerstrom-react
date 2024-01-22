@@ -25,7 +25,7 @@ export function Contact() {
             <textarea id="message" name="email" aria-label="Mensaje" placeholder="Mensaje" className="txt-upper fs-08 ff-terciary" />
           </div>
         </div>
-        <button type="submit" className="btn txt-upper mt-1 mx-auto">enviar mensaje</button>
+        <button type="submit" className="btn mt-1">enviar mensaje</button>
       </form>
     </section>
   )
