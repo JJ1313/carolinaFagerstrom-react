@@ -2,7 +2,7 @@
 
 /* ------ Headers ------  */
 .h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 0.1rem;
 }
 
@@ -54,6 +54,14 @@
   flex-direction: column !important;
 }
 
+.flex-row {
+  flex-direction: row !important;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 /* ------ Align items ------  */
 .align-items-center {
   align-items: center !important;
@@ -95,8 +103,16 @@
 }
 
 /* --- bottom */
+.mb-0p5 {
+  margin-bottom: 0.5rem !important;
+}
+
 .mb-1 {
   margin-bottom: 1rem !important;
+}
+
+.mb-1p5 {
+  margin-bottom: 1.5rem !important;
 }
 
 .mb-2 {
@@ -138,6 +154,9 @@
   margin-inline: auto !important;
 }
 
+.me-0p {
+  margin-inline-end: 0.1rem;
+}
 
 /* ------ Padding ------ */
 /* --- top */
@@ -154,8 +173,20 @@
 }
 
 /* --- bottom */
+.pb-0p5 {
+  padding-block-end: 0.5rem !important;
+}
+
 .pb-1 {
   padding-block-end: 1rem !important;
+}
+
+.pb-2 {
+  padding-block-end: 2rem !important;
+}
+
+.pb-3 {
+  padding-block-end: 3rem !important;
 }
 
 /* --- inline */
@@ -173,6 +204,10 @@
 
 .px-1 {
   padding-inline: 1rem !important;
+}
+
+.py-0p5 {
+  padding-block: 0.5rem !important;
 }
 
 /* --- all */
@@ -396,10 +431,7 @@
 
 /* ------ Large ------ */
 @media (width > 900px) {
-  .h1 {
-    font-size: 2rem;
-    letter-spacing: 0.5rem;
-  }
+
 
   .section {
     padding-inline: 3rem !important;
