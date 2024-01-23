@@ -2,6 +2,15 @@
   & .navbar {
     & li {
       border-bottom: 1px solid var(--clr-gray-5);
+
+
+    }
+
+    & div {
+      &::before {
+        content: '>';
+        margin-inline-end: 0.5rem;
+      }
     }
   }
 }
