@@ -10,8 +10,8 @@ export function Navbar() {
         <li><a className="link txt-white txt-upper fw-600 fs-0p8 d-block" href="/news">Noticias</a></li>
         <li id="dropdown-obras" className="link txt-white txt-upper dropdown fw-600 fs-0p8 pb-1"><a href="/work">Obras <span className="dropdown-icon"></span></a>
           <ul id="menu-obras" className="dropdown-menu bg-white mt-1">
-            <li className="txt-black link txt-cap fw-600 fs-0p8 mb-1"><a href="/work?concerts">Conciertos</a></li>
-            <li className="txt-black link txt-cap fw-600 fs-0p8"><a href="/work?multimedia">Multimedia</a></li>
+            <li className="txt-black link txt-cap fw-600 fs-0p8 mb-1"><a href="/work?type=concerts">Conciertos</a></li>
+            <li className="txt-black link txt-cap fw-600 fs-0p8"><a href="/work?type=multimedia">Multimedia</a></li>
           </ul>
         </li>
         <li><a className="link txt-white txt-upper fw-600 fs-0p8 d-block" href="#contact">Contacto</a></li>
