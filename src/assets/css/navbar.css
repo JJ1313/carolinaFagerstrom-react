@@ -11,6 +11,15 @@
     display: flex;
     height: 0;
     overflow: hidden;
+
+    & a.active {
+      color: var(--clr-alert);
+
+      & .dropdown-icon::before,
+      & .dropdown-icon::after {
+        background: var(--clr-alert);
+      }
+    }
   }
 }
 
