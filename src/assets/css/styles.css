@@ -398,6 +398,17 @@
   padding-inline: 1rem;
 }
 
+.blur-load {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 320px;
+
+  & img {
+    transition: opacity 200ms ease-in-out;
+  }
+}
+
 /* ------ RESPOSIVIDAD ------ */
 /* ------ Small ------ */
 @media (width > 400px) {
