@@ -2,7 +2,7 @@
   background: var(--clr-black-2);
   background-image: url(../img/hero.jpg);
   background-size: cover;
-  height: 95vh;
+  height: 95dvh;
 }
 
 .hero-title {
