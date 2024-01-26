@@ -5,12 +5,11 @@ export function Card(props) {
   const wrapperStyle = {
     backgroundImage: `url(${props.imgSmall})`,
   }
-  console.log(props.link)
 
   return (
     < article className="card hover-shadow" >
       {props.link ?
-        <a href={props.link} target="_blank" className="active">
+        <a href={props.link} target="_blank">
           <div className="img-wrapper blur-load" style={wrapperStyle} data-loaded={imgIsLoaded}>
             < img style={imgIsLoaded ? { opacity: 1 } : { opacity: 0 }} src={props.img} onLoad={() => { setImgIsLoaded(true) }} loading="lazy" />
           </div>
